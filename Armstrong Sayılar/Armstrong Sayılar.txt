@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class armstrongSayilar {
+
+	public static void main(String[] args) {
+		Scanner k=new Scanner(System.in);
+	    int sayi=k.nextInt();//kullanıcıdan bir girdi istiyoruz.
+	    double sonuc=0;
+	    int sayac=0;
+	    for(int i=sayi;i!=0;sayac++) {//for döngüsü içinde i değerini sayi ya eşitliyoruz i 0 a eşit olmayana kadar devam ediyoruz ve sayacı 1 artırıyoruz.
+	    	i=i/10;//i değerini 10'a bölüyoruz
+	    }
+	    for(int i=sayi;i!=0;i=i/10) {//for döngüsü içinde i değerini sayi ya eşitliyoruz i 0 a eşit olmayana kadar devam ediyoruz ve i değerini 10'a bölüyoruz.
+	    	int kalan=i%10;//i değerinin mod'unu alıp kalan değişkenine atıyoruz.
+	    	sonuc += Math.pow(kalan,sayac);//Math.pow ile üstel ifadeyi hesaplıyoruz.
+	    	//for döngüsüne tekrar girerken i 10 ile bölünür ve basamak değeri küçülür.
+	    }
+	    if(sayi==sonuc) {//sayi sonuc'a eşit ise girilen değer Armstrong Sayı'dır.
+	    	System.out.println("Armstrong Sayı");
+	    }
+	    else {
+	    	System.out.println("Armstrong Sayı Değil");
+	    }
+	    
+
+	}
+
+}

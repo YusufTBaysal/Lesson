@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+public class armstrongSayilar {
+
+	public static final int N=4;
+	public static void main(String[] args) {
+		
+		int satir,sutun,bosluk;
+		for(satir=1;satir<=6;satir++) {
+			for(bosluk=0; bosluk<6-satir; bosluk++) {
+				System.out.print(" ");
+			}
+			
+			for(int yıldız=0;yıldız<2*satir-1;yıldız++) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+		for(satir=1;satir<=6;satir++) {
+			for(bosluk=0; bosluk<6-satir; bosluk++) {
+				System.out.print(" ");
+			}
+			
+			for(int yıldız=0;yıldız<2*satir-1;yıldız++) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+	}
+}
